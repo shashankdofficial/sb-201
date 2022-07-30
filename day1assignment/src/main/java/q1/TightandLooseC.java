@@ -2,10 +2,12 @@ package q1;
 
 
 public class TightandLooseC {
-
+	//Tight Coupling
+	
 	//If we do any modification in Dependency class and then it will force to make changes in Dependent
 	//Class then it is called Tight Coupling.
 	
+	//Loose Coupling
 	//If we do any modification in Dependency class and then it will not force to make changes in Dependent
 	//Class then it is called Loose Coupling Coupling.
 	//ex:
