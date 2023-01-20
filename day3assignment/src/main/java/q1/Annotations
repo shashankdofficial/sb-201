@@ -1,0 +1,32 @@
+@Service :==>
+        It indicates that this class is a service layer class which means, this class contains the main
+        business logic.
+
+@component :==>
+        @Component is an annotation that allows Spring to automatically detect our custom beans. In other words,
+         without having to write any explicit code, Spring will: Scan our application for classes annotated with
+         @Component. Instantiate them and inject any specified dependencies into them.
+
+@Autowired :==>
+           ***This annotation we can apply on the fields/variable or the setter method or on the constructor
+                 of a spring bean.
+           ***The variable on which we apply the @Autowired annotation must be a reference type
+                    variable. not the primitive variable.
+
+@Component Scan :==>
+            **It is also a class level annotation
+            **This annotation will enable the component auto-scanning feature.
+                Note: this annotation should be used on the spring configuration class only, i.e. the class
+                which is annotated with @Configuration annotation.
+
+@Bean :==>
+            @Bean annotation which is applied on a method to specify that it returns a bean to be managed by
+            Spring context. Spring Bean annotation is usually declared in Configuration classes methods.
+            This annotation is also a part of the spring core framework.
+
+@value :==>
+            @Value is used to automatically assign a value from multiple environment such as spring environment,
+            system environment, property files, bean objects, default value etc.
+
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <bean id="d1" class="com.masai.Demo"/> -->
+	
+	<bean id="cal" class="q1.Calculator">
+		
+		<property name="num1" value="25" />
+		<property name="num2" value="10" />
+		
+	</bean>
+	
+	<bean id="s" class="q1.ServiceBean">
+		<property name="calc" ref="cal" />
+	</bean>
+	
+	<bean id="p" class="q1.PresentationBean">
+		<property name="service" ref="s" />
+	</bean>
+
+</beans>

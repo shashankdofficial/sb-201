@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+<bean id="s1" class="q2.Student">
+        <constructor-arg name="roll" value="101"/>
+        <constructor-arg name="name" value="Shashank"/>
+        <constructor-arg name="marks" value="980"/>
+    </bean>
+    <bean id="s2" class="q2.Student">
+        <constructor-arg name="roll" value="102"/>
+        <constructor-arg name="name" value="Gautam"/>
+        <constructor-arg name="marks" value="760"/>
+    </bean>
+    <bean id="s3" class="q2.Student">
+        <constructor-arg name="roll" value="103"/>
+        <constructor-arg name="name" value="Devarishi"/>
+        <constructor-arg name="marks" value="550"/>
+    </bean>
+    <bean id="s4" class="q2.Student">
+        <constructor-arg name="roll" value="104"/>
+        <constructor-arg name="name" value="Neha"/>
+        <constructor-arg name="marks" value="790"/>
+    </bean>
+    <bean id="s5" class="q2.Student">
+        <constructor-arg name="roll" value="105"/>
+        <constructor-arg name="name" value="Jeena"/>
+        <constructor-arg name="marks" value="770"/>
+    </bean>
+
+    <bean id="std" class="q2.Student">
+        <property name="students">
+            <list>
+                <ref bean="s1"/>
+                <ref bean="s2"/>
+                <ref bean="s3"/>
+                <ref bean="s4"/>
+                <ref bean="s5"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="city" class="q2.City">
+        <property name="cities">
+            <list>
+                <value>Lucknow</value>
+                <value>Udaypur</value>
+                <value>Banglore</value>
+                <value>Sitapur</value>
+                <value>UttraKhand</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="map1" class="q2.Mapping">
+
+        <property name="theMap">
+            <map>
+                <entry key-ref="s1" value="Lucknow"/>
+                <entry key-ref="s2" value="Sitapur"/>
+                <entry key-ref="s3" value="UttraKhand"/>
+            </map>
+        </property>
+    </bean>
+</beans>

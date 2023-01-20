@@ -1,0 +1,13 @@
+Difference between static and dynamic web-pages?
+the webpages classified into 2 categories:
+
+1.static webpages : here content will be fixed for each user intraction, they are precreated (before client request) ex: home page of gmail.
+
+--the webresources which can generate static webpages are called static webresource program ex: html file
+image file, etc.
+
+2.dynamic webpages: page contents will changed dynamically based on the input given by the user. ex: inbox of Gmail.
+
+they are not precreated before client request, they will be created based on the input value given by the client dynamically.
+
+the webresources which can generate dynamic webpages are called dynamic webresource program ex:  Servlet program(it is a java class which implements Servlet interface), jsp file.

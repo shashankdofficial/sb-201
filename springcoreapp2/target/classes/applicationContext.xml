@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- <bean id="mb" class="com.masai.MyBusinessClass" /> -->
+	
+	<!-- <bean id="c" class="com.masai.Car" />
+	<bean id="b" class="com.masai.Bike" />
+	
+	<bean id="t" class="com.masai.Travel">
+		<constructor-arg name="v" ref="c" />
+		<constructor-arg name="name" value="Shashank" />
+	</bean> -->
+	
+	
+	<!-- Using property tags -->
+	<!-- <bean id="db" class="com.masai.DAOBean" />
+	<bean id="sb" class="com.masai.ServiceBean">
+		<property name="dao" ref="db" />
+	</bean>
+	
+	<bean id="pb" class="com.masai.PresentationBean">
+		<property name="service" ref="sb" />
+	</bean> -->
+	
+	
+	<!-- Using Autowire = "byName" -->
+	<!-- <bean id="dao" class="com.masai.DAOBean" />
+	
+	<bean id="service" class="com.masai.ServiceBean" autowire="byName" />
+	
+	<bean id="pb" class="com.masai.PresentationBean" autowire="byName" /> -->
+	
+	
+	<!-- Using Autowire = "byType" -->
+	<bean id="db" class="com.masai.DAOBean" />
+	
+	<bean id="sb" class="com.masai.ServiceBean" autowire="byType" />
+	
+	<bean id="pb" class="com.masai.PresentationBean" autowire="byType" />
+</beans>
